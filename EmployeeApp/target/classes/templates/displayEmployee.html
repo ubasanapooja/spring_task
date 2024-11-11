@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Details</title>
+</head>
+<body>
+<h1>Employee Details</h1>
+<div th:if="${employee != null}">
+  <p><b>ID:</b> <span th:text="${employee.id}"></span></p>
+  <p><b>Name:</b> <span th:text="${employee.name}"></span></p>
+  <p><b>Email:</b> <span th:text="${employee.email}"></span></p>
+  <p><b>Location:</b> <span th:text="${employee.location}"></span></p>
+</div>
+</body>
+</html>
